@@ -1,0 +1,67 @@
+
+//margin and padding fix
+@mixin zero_m($margin:0px, $padding:0px) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin uls($liststyle:none) {
+  @include zero_m;
+  li {
+    list-style: $liststyle;
+  }
+}
+
+/*convert px to em */
+@mixin pxToEm($value, $base: 16px) {
+  $calcEm: ($value / $base) + 0em;
+}
+
+/*asperct ratio*/
+@mixin img_cont_proportion($width:100%, $prop:0.67) {
+  padding: (($width * $prop)/2) 0em;
+}
+
+@mixin image_center {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+// image interpolation
+@mixin img_interpolation {
+    height:auto;
+    image-rendering:optimizeSpeed;              
+    image-rendering:-moz-crisp-edges;                  
+    image-rendering:-o-crisp-edges;                    
+    image-rendering:-webkit-optimize-contrast;           
+    image-rendering:optimize-contrast;           
+    image-rendering:crisp-edges;                 
+    image-rendering:pixelated;                    
+    -ms-interpolation-mode:nearest-neighbor;               
+}
+
+/*for OLD SCHOOL )) table menu (when we can't using flex and need to put with blocks all space)*/
+@mixin table_wrap {
+  display: table;
+  width: 100%;
+  > ul {
+    display: table-row;
+    > li {
+      display: table-cell;
+      width: 1000px;
+      vertical-align: middle;
+      > a {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}

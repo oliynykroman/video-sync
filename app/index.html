@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Title</title>
+  <link rel="stylesheet" href="css/css.min.css" />
+</head>
+
+<body>
+  <main class="grid">
+    <a href="/" class="logo">OVDAL.dk</a>
+    <div class="contact">Contact us link</div>
+    <section class="video" id="video-container">
+      <video id="main-video" preload="metadata" muted loop>
+        <source src="assets/video/1.mp4" type="video/mp4" />
+        <p>
+          Video is not visible, most likely your browser does not support
+          HTML5 video
+        </p>
+      </video>
+    </section>
+    <div class="portfolio">
+      <div class="video-container-blur">
+        <video id="synced-video" class="video-blur" preload="metadata" loop muted>
+          <source src="assets/video/1.mp4" type="video/mp4" />
+          <p>
+            Video is not visible, most likely your browser does not support
+            HTML5 video
+          </p>
+        </video>
+      </div>
+      <div class="video-container--content">
+        <div class="title">Excellence in digital innovation</div>
+        <div class="cases">
+          <ul class="cases-list">
+            <li class="cases-item">
+              <div class="case-item--description">
+                <h4 class="case-item--count">Case 1</h4>
+                <h2 class="case-item--title">Title</h2>
+              </div>
+              <div class="case-item--video">
+                <video class="video" preload="metadata" muted loop>
+                  <source src="assets/video/2.mp4" type="video/mp4" />
+                  <p>
+                    Video is not visible, most likely your browser does not
+                    support HTML5 video
+                  </p>
+                </video>
+              </div>
+            </li>
+            <li class="cases-item">
+              <div class="case-item--description">
+                <h4 class="case-item--count">Case 2</h4>
+                <h2 class="case-item--title">Title</h2>
+              </div>
+              <div class="case-item--video">
+                <video class="video" preload="metadata" muted loop>
+                  <source src="assets/video/3.mp4" type="video/mp4" />
+                  <p>
+                    Video is not visible, most likely your browser does not
+                    support HTML5 video
+                  </p>
+                </video>
+              </div>
+            </li>
+            <li class="cases-item">
+              <div class="case-item--description">
+                <h4 class="case-item--count">Case 3</h4>
+                <h2 class="case-item--title">Title</h2>
+              </div>
+              <div class="case-item--video">
+                <video class="video" preload="metadata" muted loop>
+                  <source src="assets/video/1.mp4" type="video/mp4" />
+                  <p>
+                    Video is not visible, most likely your browser does not
+                    support HTML5 video
+                  </p>
+                </video>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="scroll-btn" class="scroll-btn">
+      <span></span>
+      Scroll
+    </div>
+    <div class="blur-block-controller">
+      <button class="show-title">Show Title</button>
+      <button class="show-cases">Show cases</button>
+    </div>
+  </main>
+  @@include('scripts.html')
+</body>
+
+</html>
